@@ -1,0 +1,9 @@
+
+# for registry development
+korona:
+  host: db
+  name: PandemiReportDataStaging
+  user: root
+  pass: root
+  disp: ForKoronaDevOnly
+

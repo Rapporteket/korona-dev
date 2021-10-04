@@ -2,8 +2,14 @@
 # for registry development
 korona:
   host: db
-  name: PandemiReportDataStaging
+  name: PandemiRegisterReportDataStaging
   user: root
   pass: root
   disp: ForKoronaDevOnly
+nir:
+  host: db
+  name: PandemiRegisterReportDataStaging
+  user: root
+  pass: root
+  disp: ForNirDevOnly
 

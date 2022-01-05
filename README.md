@@ -6,5 +6,4 @@ Speed up development processes for korona...
 ```docker build -t rapporteket/korona-dev .```
 
 ### Run
-```docker-compose up```
-
+Run ```docker-compose up``` from root of registry repository.

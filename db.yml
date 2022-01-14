@@ -8,7 +8,7 @@ korona:
   disp: ForKoronaDevOnly
 nir:
   host: db
-  name: PandemiRegisterReportDataStaging
+  name: IntensivRegisterReportDataStaging
   user: root
   pass: root
   disp: ForNirDevOnly

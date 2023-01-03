@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: ${{ github.repository }}
+      GITHUB_PAT: ${{ secrets.GH_TOKEN }}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3

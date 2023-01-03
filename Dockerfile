@@ -2,6 +2,9 @@ FROM rapporteket/dev:nightly
 
 LABEL maintainer "Are Edvardsen <are.edvardsen@helse-nord.no>"
 
+ARG GH_PAT
+ENV GITHUB_PAT=${GH_PAT}
+
 # hadolint ignore=DL3008
 
 # add registry dev config and R pkg dependencies

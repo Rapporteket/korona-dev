@@ -17,7 +17,7 @@ RUN cat /home/rstudio/rap_config/db.yml >> /home/rstudio/rap_config/dbConfig.yml
                                 'kableExtra',\
                                 'knitr',\
                                 'lubridate',\
-                                'plyr',\
+                                'dlyr',\
                                 'shiny',\
                                 'shinyalert',\
                                 'shinyjs',\

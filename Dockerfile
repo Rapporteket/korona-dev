@@ -1,6 +1,6 @@
-FROM rapporteket/dev:nightly
+FROM rapporteket/dev:weekly
 
-LABEL maintainer "Are Edvardsen <are.edvardsen@helse-nord.no>"
+LABEL maintainer "Lena Ringstad Olsen <Lena.Ringstad.Olsen@helse-nord.no>"
 
 ARG GH_PAT
 ENV GITHUB_PAT=${GH_PAT}
@@ -13,15 +13,19 @@ RUN cat /home/rstudio/rap_config/db.yml >> /home/rstudio/rap_config/dbConfig.yml
     && rm /home/rstudio/rap_config/db.yml \
     && R -e "install.packages(c('digest',\
                                 'DT', \
+                                'dplyr',\
                                 'enc', \
+                                'forcats',\
+                                'ggplot2', \
                                 'kableExtra',\
                                 'knitr',\
                                 'lubridate',\
-                                'dlyr',\
+                                'readr',\
                                 'shiny',\
                                 'shinyalert',\
                                 'shinyjs',\
-                                'tidyverse', \
+                                'tibble',\
+                                'tidyr', \
                                 'xtable', \
                                 'zip', \
                                 'zoo'))" \

@@ -1,4 +1,4 @@
-## Tailored development docker image for korona
+## Tailored development docker image for korona 
 
 Speed up development processes for korona...
 

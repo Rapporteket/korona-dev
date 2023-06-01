@@ -11,9 +11,9 @@ ENV GITHUB_PAT=${GH_PAT}
 COPY --chown=rstudio:rstudio db.yml /home/rstudio/rap_config/
 RUN cat /home/rstudio/rap_config/db.yml >> /home/rstudio/rap_config/dbConfig.yml \
     && rm /home/rstudio/rap_config/db.yml \
+    && R -e "remotes::install_github(c('Rapporteket/rapbase', 'Rapporteket/rapFigurer', 'Rapporteket/raplog', 'Rapporteket/sship', 'Rapporteket/intensivberedskap'))" \
     && R -e "install.packages(c('digest',\
                                 'DT', \
-                                'dplyr',\
                                 'enc', \
                                 'forcats',\
                                 'ggplot2', \
@@ -28,5 +28,5 @@ RUN cat /home/rstudio/rap_config/db.yml >> /home/rstudio/rap_config/dbConfig.yml
                                 'tidyr', \
                                 'xtable', \
                                 'zip', \
-                                'zoo'))" \
-    && R -e "remotes::install_github(c('Rapporteket/rapbase', 'Rapporteket/rapFigurer', 'Rapporteket/raplog', 'Rapporteket/sship', 'Rapporteket/intensivberedskap'))"
+                                'zoo',
+                                'dplyr'))"

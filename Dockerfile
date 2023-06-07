@@ -30,4 +30,4 @@ RUN cat /home/rstudio/rap_config/db.yml >> /home/rstudio/rap_config/dbConfig.yml
                                 'xtable', \
                                 'zip', \
                                 'zoo', \
-                                'dplyr'))"
+                                'dplyr (>= 1.1.1)'))"

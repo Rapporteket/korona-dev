@@ -1,4 +1,4 @@
-FROM rapporteket/dev:nightly
+FROM rapporteket/dev:main
 
 LABEL maintainer "Lena Ringstad Olsen <Lena.Ringstad.Olsen@helse-nord.no>"
 
